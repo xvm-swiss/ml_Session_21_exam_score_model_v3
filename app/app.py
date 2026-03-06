@@ -8,7 +8,7 @@ from preprocessing import encode_sleep_quality, encode_facility_rating, encode_e
 model = joblib.load( 'artifacts/svm_pipeline.pkl' )
 st.set_page_config( 'Exam Score Prediction', ':book:', 'wide' )
 
-st.markdown( '<h1 style = "font-size:50px;color:orange;font-family:times new roman;" >Exam Score Prediction using ML</h1>', unsafe_allow_html=True )
+st.markdown( '<h1 style = "font-size:50px;color:green;font-family:times new roman;" >Exam Score Prediction using ML</h1>', unsafe_allow_html=True )
 
 df = pd.read_csv( 'data/feature eng data/feature_eng_data.csv' )
 
